@@ -22,7 +22,13 @@ decisions:
       industries: [finance]
       brand_types: [institutional_public_trust]
       conditions: [governance]
-      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+      archetypes:
+        [
+          brand_experience_guide,
+          full_brand_system,
+          corporate_toolkit,
+          logo_asset_guidelines,
+        ]
     dependencies:
       requires: [Governance]
       enables: [Operations]
@@ -36,7 +42,8 @@ decisions:
     title: 把歷史品牌的核心識別當成不可妥協的資產來保護
     problem:
       statement: 歷史悠久的品牌，其 logo、色彩與材質是長期累積的資產；任何外部合作或內部輸出都可能在不經意間稀釋它。
-      signals: [heritage, asset_protection, consistency_over_time, brand_dilution_risk]
+      signals:
+        [heritage, asset_protection, consistency_over_time, brand_dilution_risk]
     solution:
       module: Visual Identity
       move: 把 logo 版本、光學幾何、最小尺寸、清除區與色彩重製定為不可妥協的資產規則，並要求以 Pantone/CMYK 準確匹配
@@ -59,7 +66,7 @@ decisions:
     evidence:
       - brand_id: CDB_BrandIdentityManual
         chapter: ch-02
-        excerpt: "logo elements 不得 reposition、recolour、distort、remove、改變比例關係或加特效；master artwork 是唯一正確來源，須依 Pantone Inc. 標準配色檢查。"
+        excerpt: 'logo elements 不得 reposition、recolour、distort、remove、改變比例關係或加特效；master artwork 是唯一正確來源，須依 Pantone Inc. 標準配色檢查。'
     status: extracted
 
   - id: dp-clearspace-from-logo-geometry
@@ -79,7 +86,8 @@ decisions:
       industries: []
       brand_types: []
       conditions: [multi_media]
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
       enables: []
@@ -88,7 +96,7 @@ decisions:
     evidence:
       - brand_id: CDB_BrandIdentityManual
         chapter: ch-02-01
-        excerpt: "clear space 等於 logo type 中 E 的高度；任何 graphic element、typography 或 pattern 不得進入以 E 高度定義的排除區，clear-space token 綁定 logo 內部可見元素。"
+        excerpt: 'clear space 等於 logo type 中 E 的高度；任何 graphic element、typography 或 pattern 不得進入以 E 高度定義的排除區，clear-space token 綁定 logo 內部可見元素。'
     status: extracted
 
   - id: dp-monochrome-logo-by-contrast
@@ -107,20 +115,21 @@ decisions:
       industries: []
       brand_types: []
       conditions: []
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
       enables: [Accessibility]
     evidence:
       - brand_id: CDB_BrandIdentityManual
         chapter: ch-02-02
-        excerpt: "依 background/reproduction need 選用 full colour、flat colour、B&W、reverse colour、reverse B&W 版本；不得使用未授權色彩，印刷廣告最小 logo diameter 25mm。"
+        excerpt: '依 background/reproduction need 選用 full colour、flat colour、B&W、reverse colour、reverse B&W 版本；不得使用未授權色彩，印刷廣告最小 logo diameter 25mm。'
     status: extracted
 
   - id: dp-media-split-typography
     title: 依媒介分流字體系統（print / digital / body）
     problem:
-      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權規定。
       signals: [print_and_digital, readability, licensing]
     solution:
       module: Typography System
@@ -143,7 +152,7 @@ decisions:
     evidence:
       - brand_id: CDB_BrandIdentityManual
         chapter: ch-02-03
-        excerpt: "external communications 用 Futura/Granjon 等品牌字體、internal Office 用 Arial/Verdana/Times New Roman；signature 必須 Arial Bold，print advertising body 用 Granjon Roman/Bold、header 用 Futura，依用途分層。"
+        excerpt: 'external communications 用 Futura/Granjon 等品牌字體、internal Office 用 Arial/Verdana/Times New Roman；signature 必須 Arial Bold，print advertising body 用 Granjon Roman/Bold、header 用 Futura，依用途分層。'
     status: extracted
 
   - id: dp-cobranding-grid-governance
@@ -170,5 +179,5 @@ decisions:
     evidence:
       - brand_id: CDB_BrandIdentityManual
         chapter: ch-05
-        excerpt: "CDB logo 使用需 pre-authorization 並預留 7 working days、never bigger than partner logo、理想 1:1 visual space，且不得出現在 product-oriented communication 旁，避免被誤認為背書。"
+        excerpt: 'CDB logo 使用需 pre-authorization 並預留 7 working days、never bigger than partner logo、理想 1:1 visual space，且不得出現在 product-oriented communication 旁，避免被誤認為背書。'
     status: extracted

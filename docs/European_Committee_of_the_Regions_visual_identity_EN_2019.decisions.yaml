@@ -9,7 +9,13 @@ decisions:
     title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
     problem:
       statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
-      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+      signals:
+        [
+          multi_unit_consistency,
+          multi_entity,
+          sub_unit_identity,
+          brand_architecture_complexity,
+        ]
     solution:
       module: Brand Architecture
       move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
@@ -32,7 +38,7 @@ decisions:
     evidence:
       - brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
         chapter: ch-04-01
-        excerpt: "為六個 commission（CIVEX、ENVE、COTER、NAT、ECON、SEDEC）指定專屬 HEX 與 diamond-based layout，用 masterbrand anchor + commission colour + scaled diamond 維持差異又保留 CoR 主識別連結。"
+        excerpt: '為六個 commission（CIVEX、ENVE、COTER、NAT、ECON、SEDEC）指定專屬 HEX 與 diamond-based layout，用 masterbrand anchor + commission colour + scaled diamond 維持差異又保留 CoR 主識別連結。'
     status: extracted
 
   - id: dp-bilingual-identity-system
@@ -62,7 +68,7 @@ decisions:
     evidence:
       - brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
         chapter: ch-01-01
-        excerpt: "logo 有 24 種 EU 語言版本、需依 ISO 639-1 原文標題排序，雙語版文字上下排列且依正式標題字母順序；Brussels 外牆法規例外不可用於其他情境。"
+        excerpt: 'logo 有 24 種 EU 語言版本、需依 ISO 639-1 原文標題排序，雙語版文字上下排列且依正式標題字母順序；Brussels 外牆法規例外不可用於其他情境。'
     status: extracted
 
   - id: dp-clearspace-from-logo-geometry
@@ -82,7 +88,8 @@ decisions:
       industries: []
       brand_types: []
       conditions: [multi_media]
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
       enables: []
@@ -91,13 +98,13 @@ decisions:
     evidence:
       - brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
         chapter: ch-01
-        excerpt: "clear space 等於 4X、X 為 EU flag 高度的 1/8，diamond 與 grid 也都以 EU flag 尺寸衍生，讓所有比例有同一基準。"
+        excerpt: 'clear space 等於 4X、X 為 EU flag 高度的 1/8，diamond 與 grid 也都以 EU flag 尺寸衍生，讓所有比例有同一基準。'
     status: extracted
 
   - id: dp-media-split-typography
     title: 依媒介分流字體系統（print / digital / body）
     problem:
-      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權規定。
       signals: [print_and_digital, readability, licensing]
     solution:
       module: Typography System
@@ -120,7 +127,7 @@ decisions:
     evidence:
       - brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
         chapter: ch-01-02
-        excerpt: "Myriad Pro 提供跨歐語支援、Minion Pro 為內頁帶來節奏，Office 場景可用 Arial/Times 替代；headline/subtitle 對比遵守 2:1。"
+        excerpt: 'Myriad Pro 提供跨歐語支援、Minion Pro 為內頁帶來節奏，Office 場景可用 Arial/Times 替代；headline/subtitle 對比遵守 2:1。'
     status: extracted
 
   - id: dp-cobranding-grid-governance
@@ -146,5 +153,5 @@ decisions:
     evidence:
       - brand_id: European_Committee_of_the_Regions_visual_identity_EN_2019
         chapter: ch-01-01
-        excerpt: "聯名 logo 間距至少等於 EU flag 寬；co-branded publication 需依三種聯名方式配置、signpost host/co-organised 版型不得混用。"
+        excerpt: '聯名 logo 間距至少等於 EU flag 寬；co-branded publication 需依三種聯名方式配置、signpost host/co-organised 版型不得混用。'
     status: extracted

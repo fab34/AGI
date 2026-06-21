@@ -106,7 +106,7 @@ Dell 的品牌識別標準，從 CEO 訊息開始，規範 logo、color、typogr
 5. **Principles**：rebrand 成功需要淘汰策略，不只發布新規範。
 6. **Frameworks**：identify old treatments -> discontinue -> replace。
 7. **Patterns**：guideline 應含 deprecated assets 章節。
-8. **Rules**：AI 可檢查：任何舊 logo/treatment 應標記不符合規定並替換為新 logo。
+8. **Rules**：AI 可檢查：任何舊 logo/treatment 應標記違反規定並替換為新 logo。
 9. **Reusable Knowledge**：品牌系統需要 deprecation policy。
 10. **Abstraction**：`Governance`、`Asset Management`。
 11. **Visual Evidence**：舊處理展示是淘汰證據。

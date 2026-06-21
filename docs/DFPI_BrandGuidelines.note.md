@@ -78,7 +78,7 @@ California DFPI 的品牌規範，涵蓋品牌介紹、logo、字體、色彩、
 5. **Principles**：色彩規範要把品牌核心色與功能擴充色分開。
 6. **Frameworks**：Primary for identity，secondary for flexibility。
 7. **Patterns**：色彩 token 清單可直接轉成設計系統或 AI 檢查表。
-8. **Rules**：僅使用列出的 Hex / RGB；主色包含 `#AA8A00` 與 `#002D72`；新增色彩需被視為不符合規定。
+8. **Rules**：僅使用列出的 Hex / RGB；主色包含 `#AA8A00` 與 `#002D72`；新增色彩需被視為違反規定。
 9. **Reusable Knowledge**：公共品牌可用有限主色維持權威感，再以次色支援溝通彈性。
 10. **Abstraction**：`Color System`、`Design Tokens`。
 11. **Visual Evidence**：色票與數值是此章的核心視覺證據。

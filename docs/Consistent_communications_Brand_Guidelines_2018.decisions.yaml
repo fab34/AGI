@@ -9,7 +9,13 @@ decisions:
     title: 先把使命變成共用語言系統，再進入視覺規範
     problem:
       statement: 公益／使命型品牌若一開始就談視覺規範，色彩、攝影與字體會失去策略根基，淪為各自詮釋的風格選擇。
-      signals: [mission_communication, no_strategic_foundation, participation, new_identity]
+      signals:
+        [
+          mission_communication,
+          no_strategic_foundation,
+          participation,
+          new_identity,
+        ]
     solution:
       module: Brand Strategy
       move: 先用 voice attributes → mission → tagline → short/long description 把使命轉成可被全員共用的語言系統，再讓視覺承接其意義
@@ -31,14 +37,15 @@ decisions:
     evidence:
       - brand_id: Consistent_communications_Brand_Guidelines_2018
         chapter: ch-01
-        excerpt: "先把 brand 定義成組織人格與被感知方式（brand personality → visual identity tools → governance by communications team），再以 weave metaphor 從 civic dialogue 與 collaboration 生成視覺語言。"
+        excerpt: '先把 brand 定義成組織人格與被感知方式（brand personality → visual identity tools → governance by communications team），再以 weave metaphor 從 civic dialogue 與 collaboration 生成視覺語言。'
     status: extracted
 
   - id: dp-personality-words-as-evaluation-criteria
     title: 把人格詞做成創意評估準則
     problem:
       statement: 抽象企業價值無法指導產出，設計與文案缺乏共同判斷語彙。
-      signals: [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
+      signals:
+        [abstract_values, needs_evaluation_criteria, inconsistent_outputs]
     solution:
       module: Brand Strategy
       move: 用人格詞集（Curious/Sharing/Free Thinking/Caring/Optimistic）當每個產出的檢查軸
@@ -58,7 +65,7 @@ decisions:
     evidence:
       - brand_id: Consistent_communications_Brand_Guidelines_2018
         chapter: ch-01-02
-        excerpt: "以 Diversity、Collaboration、Integrity、Ingenuity 四個價值作評估軸，品牌文案需尊重這四項、不得排除非專業受眾或弱化透明度。"
+        excerpt: '以 Diversity、Collaboration、Integrity、Ingenuity 四個價值作評估軸，品牌文案需尊重這四項、不得排除非專業受眾或弱化透明度。'
     status: extracted
 
   - id: dp-clearspace-from-logo-geometry
@@ -78,7 +85,8 @@ decisions:
       industries: []
       brand_types: []
       conditions: [multi_media]
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
       enables: []
@@ -87,13 +95,13 @@ decisions:
     evidence:
       - brand_id: Consistent_communications_Brand_Guidelines_2018
         chapter: ch-02-01
-        excerpt: "safe area 為 Commonwealth capital letters 高度的 2 倍，以字母高度 X 定義留白；vertical logo 最小高度 25mm、horizontal 最小寬度 55mm。"
+        excerpt: 'safe area 為 Commonwealth capital letters 高度的 2 倍，以字母高度 X 定義留白；vertical logo 最小高度 25mm、horizontal 最小寬度 55mm。'
     status: extracted
 
   - id: dp-media-split-typography
     title: 依媒介分流字體系統（print / digital / body）
     problem:
-      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權規定。
       signals: [print_and_digital, readability, licensing]
     solution:
       module: Typography System
@@ -116,14 +124,15 @@ decisions:
     evidence:
       - brand_id: Consistent_communications_Brand_Guidelines_2018
         chapter: ch-02-03
-        excerpt: "PMN Caecilia 用於 professional design 材料、Trebuchet MS 用於內部文件與 fallback，把 licensing/availability 納入字體決策。"
+        excerpt: 'PMN Caecilia 用於 professional design 材料、Trebuchet MS 用於內部文件與 fallback，把 licensing/availability 納入字體決策。'
     status: extracted
 
   - id: dp-accessible-contrast-pairs
     title: 把可近用性前置成核准對比配色，而非設計者自行判斷
     problem:
       statement: 公共資訊面向全體市民與輔助科技，若放任設計者自由配色，容易產生不符合無障礙標準、身心障礙者無法閱讀的組合。
-      signals: [accessibility, public_trust, inclusive_audience, regulatory_compliance]
+      signals:
+        [accessibility, public_trust, inclusive_audience, regulatory_compliance]
     solution:
       module: Accessibility
       move: 把可近用性放在視覺工具區（而非附錄），明訂至少符合 WCAG 2.1 AA，並只允許清單內的核准對比配色
@@ -146,7 +155,7 @@ decisions:
     evidence:
       - brand_id: Consistent_communications_Brand_Guidelines_2018
         chapter: ch-03
-        excerpt: "main text 不得小於 9pt、圖片疊字需最大對比、highlight 不得只靠顏色，並以 poor/good/excellent contrast 對照與紙張 glare、binding crease 等實體條件規範可讀性。"
+        excerpt: 'main text 不得小於 9pt、圖片疊字需最大對比、highlight 不得只靠顏色，並以 poor/good/excellent contrast 對照與紙張 glare、binding crease 等實體條件規範可讀性。'
     status: extracted
 
   - id: dp-from-to-voice-translation
@@ -163,7 +172,14 @@ decisions:
       - 權威不必等於複雜，清楚也是尊重受眾
       - 用 avoid/replace pair 直接轉成 rewrite rule
     applicable_when:
-      industries: [industrial_materials_science, tech_software, finance, public_sector, nonprofit_social]
+      industries:
+        [
+          industrial_materials_science,
+          tech_software,
+          finance,
+          public_sector,
+          nonprofit_social,
+        ]
       brand_types: [institutional_public_trust, mission_driven]
       conditions: [expert_audience, technical_translation]
       archetypes: [full_brand_system, brand_experience_guide, corporate_toolkit]
@@ -178,7 +194,7 @@ decisions:
     evidence:
       - brand_id: Consistent_communications_Brand_Guidelines_2018
         chapter: ch-05-02
-        excerpt: "語氣須 approachable、inclusive、succinct、simple、authoritative without over-authoritative，並以 avoid/replace pair（如 because 取代 due to the fact that）把語氣轉成 rewrite rule。"
+        excerpt: '語氣須 approachable、inclusive、succinct、simple、authoritative without over-authoritative，並以 avoid/replace pair（如 because 取代 due to the fact that）把語氣轉成 rewrite rule。'
     status: extracted
 
   - id: dp-cobranding-grid-governance
@@ -205,5 +221,5 @@ decisions:
     evidence:
       - brand_id: Consistent_communications_Brand_Guidelines_2018
         chapter: ch-06-01
-        excerpt: "partner logos side by side、Foundation logo on left、logos equal size，並要求 print proofs 在分發/印刷前 approval、web 需 link to commonwealthfoundation.com。"
+        excerpt: 'partner logos side by side、Foundation logo on left、logos equal size，並要求 print proofs 在分發/印刷前 approval、web 需 link to commonwealthfoundation.com。'
     status: extracted

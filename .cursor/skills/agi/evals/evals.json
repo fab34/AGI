@@ -1,0 +1,29 @@
+{
+  "skill_name": "agi",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "幫我新客戶弄一份 design guideline。",
+      "expected_output": "進入 Intake，一次只問一個問題（先問客戶名稱或第一個還沒填的欄位）。在所有 intake 問題答完之前，不會丟出完整 plan，也不會寫任何 clients/ 底下的檔案。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "好，問完了。接下來呢？",
+      "expected_output": "一次給出完整的 Guideline Plan 請使用者確認；在使用者說 OK 之前，不會先寫 blueprint.yaml 或 note.md。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "OK 沒問題，就照這個 plan 開始做。",
+      "expected_output": "得到明確確認後，才建立 clients/<slug>/，產出 intake.yaml、blueprint.yaml、index.yaml、note.md、coach_session.md，並把 plan 狀態更新成 confirmed。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "策略不用談啦，直接幫我寫 Logo 那段。",
+      "expected_output": "在 Intake 階段，若使用者想跳過策略，會追問一個跟挑戰有關的問題；在 Plan 階段則先記成 skip／TBD，不會在 plan 確認前就先寫出 Logo 草稿。",
+      "files": []
+    }
+  ]
+}

@@ -64,7 +64,7 @@ BMW 官方俱樂部 CI 指南，針對官方 BMW Clubs 的命名、signet、club
 5. **Principles**：母品牌社群素材應避免負面聯想，因為地方內容會回流影響全球品牌聲譽。
 6. **Frameworks**：Image Risk Filter：quality、tone、negative association、content safety。
 7. **Patterns**：攝影規則不只說「好看」，還要明確排除事故、故障與歧視內容。
-8. **Rules**：AI 可標記低解析、事故、拋錨、政治符號、種族歧視或性暗示影像為不符合規定；素材須支援高品質 reproduction。
+8. **Rules**：AI 可標記低解析、事故、拋錨、政治符號、種族歧視或性暗示影像為違反規定；素材須支援高品質 reproduction。
 9. **Reusable Knowledge**：社群品牌的 imagery guideline 應同時包含 aesthetic fit 與 content safety。
 10. **Abstraction**：Photography System、Content Safety、Visual QA。
 11. **Visual Evidence**：以 do/don't 影像承擔警示與情緒邊界證據功能。

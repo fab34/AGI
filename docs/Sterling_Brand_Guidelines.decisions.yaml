@@ -20,14 +20,15 @@ decisions:
       industries: []
       brand_types: []
       conditions: [multi_media]
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
       enables: []
     evidence:
       - brand_id: Sterling_Brand_Guidelines
         chapter: ch-02-02
-        excerpt: "使用 x-height、y-height 與球體尺寸描述安全區、字標長度與 icon-wordmark 距離；安全區內不得有圖像、文字或元素侵入。"
+        excerpt: '使用 x-height、y-height 與球體尺寸描述安全區、字標長度與 icon-wordmark 距離；安全區內不得有圖像、文字或元素侵入。'
     status: extracted
 
   - id: dp-monochrome-logo-by-contrast
@@ -46,14 +47,15 @@ decisions:
       industries: []
       brand_types: []
       conditions: []
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
       enables: [Accessibility]
     evidence:
       - brand_id: Sterling_Brand_Guidelines
         chapter: ch-02-01
-        excerpt: "照片或色彩背景上使用 reverse logo 並確保可讀；有限色彩或低品質複製時 monochrome 僅限 black、white、light gray，不得錯放在紅底上。"
+        excerpt: '照片或色彩背景上使用 reverse logo 並確保可讀；有限色彩或低品質複製時 monochrome 僅限 black、white、light gray，不得錯放在紅底上。'
     status: extracted
 
   - id: dp-cobranding-grid-governance
@@ -79,13 +81,13 @@ decisions:
     evidence:
       - brand_id: Sterling_Brand_Guidelines
         chapter: ch-02-03
-        excerpt: "partner logo 必須置於指定 co-branding zone，其高度不得超出 Sterling wordmark 高度（partner-logo containment model）。"
+        excerpt: 'partner logo 必須置於指定 co-branding zone，其高度不得超出 Sterling wordmark 高度（partner-logo containment model）。'
     status: extracted
 
   - id: dp-media-split-typography
     title: 依媒介分流字體系統（print / digital / body）
     problem:
-      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權規定。
       signals: [print_and_digital, readability, licensing]
     solution:
       module: Typography System
@@ -107,5 +109,5 @@ decisions:
     evidence:
       - brand_id: Sterling_Brand_Guidelines
         chapter: ch-03
-        excerpt: "media-specific typography framework：logo typeface 是 FF Cocon、advertising typeface 是 Museo Sans、email 字體是 Century Gothic。"
+        excerpt: 'media-specific typography framework：logo typeface 是 FF Cocon、advertising typeface 是 Museo Sans、email 字體是 Century Gothic。'
     status: extracted

@@ -8,7 +8,13 @@ decisions:
     title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
     problem:
       statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
-      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+      signals:
+        [
+          trademark_protection,
+          partner_governance,
+          endorsement_risk,
+          third_party_usage,
+        ]
     solution:
       module: Legal and Trademark
       move: 以「核准來源 + 允許情境 + 禁止改作 + permission gate」治理，高風險情境須送審並附最終版本、描述與 script
@@ -31,10 +37,10 @@ decisions:
     evidence:
       - brand_id: accoya_brand_guidelines_2015
         chapter: ch-01-01
-        excerpt: "技術材料品牌的 guideline 應先定義法律保護與宣稱邊界；先列保護範圍與檢查權，並保留 Accsys Technologies 檢查材料與採取行動的權利。"
+        excerpt: '技術材料品牌的 guideline 應先定義法律保護與宣稱邊界；先列保護範圍與檢查權，並保留 Accsys Technologies 檢查材料與採取行動的權利。'
       - brand_id: accoya_brand_guidelines_2015
         chapter: ch-06-04
-        excerpt: "Made With ingredient mark 僅能在 Accsys Technologies 書面核准後使用，將授權與資產請求集中到 Marketing Team，避免第三方自行使用造成品牌與法律誤解。"
+        excerpt: 'Made With ingredient mark 僅能在 Accsys Technologies 書面核准後使用，將授權與資產請求集中到 Marketing Team，避免第三方自行使用造成品牌與法律誤解。'
     status: extracted
 
   - id: dp-cobranding-grid-governance
@@ -59,13 +65,13 @@ decisions:
     evidence:
       - brand_id: accoya_brand_guidelines_2015
         chapter: ch-03-05
-        excerpt: "聯名需要彈性，但品牌層級不可失衡：partner brand 在自己的 allocated space，不得干擾 Accoya Green Tab，且 joint branded logo 不得大於 Accoya。"
+        excerpt: '聯名需要彈性，但品牌層級不可失衡：partner brand 在自己的 allocated space，不得干擾 Accoya Green Tab，且 joint branded logo 不得大於 Accoya。'
     status: extracted
 
   - id: dp-media-split-typography
     title: 依媒介分流字體系統（print / digital / body）
     problem:
-      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權規定。
       signals: [print_and_digital, readability, licensing]
     solution:
       module: Typography System
@@ -84,8 +90,8 @@ decisions:
     evidence:
       - brand_id: accoya_brand_guidelines_2015
         chapter: ch-05-01
-        excerpt: "Print Typeface 規範 Neo Sans Light 用於大寫 headline、Neo Sans Regular 用於 sentence case 內文，字體權重應對應資訊層級。"
+        excerpt: 'Print Typeface 規範 Neo Sans Light 用於大寫 headline、Neo Sans Regular 用於 sentence case 內文，字體權重應對應資訊層級。'
       - brand_id: accoya_brand_guidelines_2015
         chapter: ch-05-02
-        excerpt: "Web Typeface 處理網頁與 email live text 的技術限制，允許 Arial 作為 Neo Sans 不可用時的 fallback，品牌字體需兼顧可用性與技術限制。"
+        excerpt: 'Web Typeface 處理網頁與 email live text 的技術限制，允許 Arial 作為 Neo Sans 不可用時的 fallback，品牌字體需兼顧可用性與技術限制。'
     status: extracted

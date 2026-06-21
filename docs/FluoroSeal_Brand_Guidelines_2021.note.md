@@ -120,7 +120,7 @@ The official FluoroSeal brandbook defining brand strategy, logo usage, colors, t
 6. **Frameworks**：色彩框架是「primary background -> key visual elements -> secondary accent -> white separation」。
 7. **Patterns**：一次只用一個 additional color 是可移植的色彩治理規則。
 8. **Rules**：AI 可檢查：key visual elements 只能用 primary colors 與 white；secondary colors 不應混用；使用 primary/secondary colors 時應以 white 分隔；Corporate Blue 應使用 #00558C。
-9. **Reusable Knowledge**：色彩系統應不只列 token，也要定義組合規則。
+9. **Reusable Knowledge**：色彩系統應不只列 token，也要定義組成規則。
 10. **Abstraction**：`Color System`、`Design Tokens`、`AI-Checkable Rules`。
 11. **Visual Evidence**：色票、tints 與 usage principle 頁承擔 token 與組合證據。
 

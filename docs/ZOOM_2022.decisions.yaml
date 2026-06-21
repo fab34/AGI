@@ -8,7 +8,13 @@ decisions:
     title: 用授權閘門治理第三方商標使用，先處理混淆與背書風險
     problem:
       statement: 平台品牌被大量第三方使用商標與資產，若無授權流程，會造成商標混淆與誤導性背書風險。
-      signals: [trademark_protection, partner_governance, endorsement_risk, third_party_usage]
+      signals:
+        [
+          trademark_protection,
+          partner_governance,
+          endorsement_risk,
+          third_party_usage,
+        ]
     solution:
       module: Legal and Trademark
       move: 把行銷便利與商標風險放在同一份操作文件，以 scope → 後果 → review/approval → trademark attribution 的可撤銷授權治理
@@ -31,10 +37,10 @@ decisions:
     evidence:
       - brand_id: ZOOM_2022
         chapter: ch-01
-        excerpt: "合作品牌治理需要把行銷便利與法律/商標風險放在同一份操作文件中；若不符合規定需 rectification，嚴重時可撤銷 Zoom trademark 使用權。"
+        excerpt: '合作品牌治理需要把行銷便利與法律/商標風險放在同一份操作文件中；若違反規定需 rectification，嚴重時可撤銷 Zoom trademark 使用權。'
       - brand_id: ZOOM_2022
         chapter: ch-10
-        excerpt: "Zoom Marks 需 license 或 express written permission；任何 featuring Zoom Mark 的溝通應包含 proper trademark attribution，並符合 guideline 與 partner agreement license terms。"
+        excerpt: 'Zoom Marks 需 license 或 express written permission；任何 featuring Zoom Mark 的溝通應包含 proper trademark attribution，並符合 guideline 與 partner agreement license terms。'
     status: extracted
 
   - id: dp-clearspace-from-logo-geometry
@@ -53,14 +59,15 @@ decisions:
       industries: []
       brand_types: []
       conditions: [multi_media]
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
       enables: []
     evidence:
       - brand_id: ZOOM_2022
         chapter: ch-05-01
-        excerpt: "Zoom logo clear space 至少等於 logo height，並訂最小尺寸（不得小於 18 px 高或 80 px 寬）。"
+        excerpt: 'Zoom logo clear space 至少等於 logo height，並訂最小尺寸（不得小於 18 px 高或 80 px 寬）。'
     status: extracted
 
   - id: dp-cobranding-grid-governance
@@ -88,5 +95,5 @@ decisions:
     evidence:
       - brand_id: ZOOM_2022
         chapter: ch-06-03
-        excerpt: "joint lock-up 不是融合品牌，而是兩個來源用 divider 保持邊界；partner logo 永遠 primary、Zoom secondary，必須使用 vertical/horizontal divider 並維持平衡尺寸。"
+        excerpt: 'joint lock-up 不是融合品牌，而是兩個來源用 divider 保持邊界；partner logo 永遠 primary、Zoom secondary，必須使用 vertical/horizontal divider 並維持平衡尺寸。'
     status: extracted

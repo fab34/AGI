@@ -5,7 +5,7 @@ description: 當使用者想把既有 docs/*.note.md 的反向工程分析「升
 
 # Design Strategy Extractor
 
-把 AGI 既有研究成果（`docs/*.note.md` 的十一維分析）**升級**成知識圖譜的 L3 決策層：可被 Design Strategy Agent 推理、可回溯證據的 **Decision Pattern 決策卡**。
+把 AGI 既有研究成果（`docs/*.note.md` 的十一維分析）**升級**成知識圖譜的 L3 決策層：可被 AGI 推理、可回溯證據的 **Decision Pattern 決策卡**。
 
 核心轉換：
 
@@ -17,11 +17,11 @@ note.md（散文式 why）  →  decisions.yaml（結構化 problem/solution/rea
 
 ## 與其他 skill 的分工
 
-| Skill | 輸入 | 輸出 |
-|-------|------|------|
-| design-guideline-researcher | PDF | `docs/*.index.yaml` + `note.md` |
+| Skill                                     | 輸入                     | 輸出                                              |
+| ----------------------------------------- | ------------------------ | ------------------------------------------------- |
+| design-guideline-researcher               | PDF                      | `docs/*.index.yaml` + `note.md`                   |
 | **design-strategy-extractor（本 skill）** | `note.md` + `index.yaml` | `docs/*.decisions.yaml` + 回填 `profile.industry` |
-| design-guideline-coach | 客戶 brief + 知識圖譜 | `clients/<slug>/` guideline 初稿 |
+| agi                                       | 客戶 brief + 知識圖譜    | `clients/<slug>/` guideline 初稿                  |
 
 ## 台灣繁體正體用語
 
@@ -85,17 +85,17 @@ decisions:
       layer: strategy|language|visual_core|visual_extended|product|governance
     reason: [...]
     applicable_when:
-      industries: [...]      # 見 industries.yaml
-      brand_types: [...]     # 見 brand_types.yaml
+      industries: [...] # 見 industries.yaml
+      brand_types: [...] # 見 brand_types.yaml
       conditions: [...]
-      archetypes: [...]      # 見 archetypes.yaml
+      archetypes: [...] # 見 archetypes.yaml
     dependencies:
       requires: [...]
       enables: [...]
     examples: [...]
     anti_patterns: [...]
     evidence:
-      - {brand_id: <stem>, chapter: ch-xx, excerpt: "節錄自 note.md"}
+      - { brand_id: <stem>, chapter: ch-xx, excerpt: '節錄自 note.md' }
     status: extracted
 ```
 

@@ -18,20 +18,27 @@ decisions:
       - 留白以標誌自身元素為單位，可隨縮放維持比例
     applicable_when:
       conditions: [multi_media]
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
     evidence:
       - brand_id: First_Bank_Brand_Guidelines_2021
         chapter: ch-02-01
-        excerpt: "clear space 至少等於 logo 中 F 的寬高，logo 最小寬度不得低於 55 px 或 0.76 in；以字母單位量測 clear space 是可移植模式，可讓 logo 隨尺寸等比例保護。"
+        excerpt: 'clear space 至少等於 logo 中 F 的寬高，logo 最小寬度不得低於 55 px 或 0.76 in；以字母單位量測 clear space 是可移植模式，可讓 logo 隨尺寸等比例保護。'
     status: extracted
 
   - id: dp-modular-manual-for-public-units
     title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
     problem:
       statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
-      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+      signals:
+        [
+          multi_unit_consistency,
+          multi_entity,
+          sub_unit_identity,
+          brand_architecture_complexity,
+        ]
     solution:
       module: Brand Architecture
       move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
@@ -54,13 +61,13 @@ decisions:
     evidence:
       - brand_id: First_Bank_Brand_Guidelines_2021
         chapter: ch-02-02
-        excerpt: "Mortgage Services、Wealth Management、Private Banking 以 endorsed identity、controlled differentiation、master brand priority 使用核准 lockup；非核准業務不得自行建立 lockup，以有限例外管理 portfolio complexity。"
+        excerpt: 'Mortgage Services、Wealth Management、Private Banking 以 endorsed identity、controlled differentiation、master brand priority 使用核准 lockup；非核准業務不得自行建立 lockup，以有限例外管理 portfolio complexity。'
     status: extracted
 
   - id: dp-media-split-typography
     title: 依媒介分流字體系統（print / digital / body）
     problem:
-      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權規定。
       signals: [print_and_digital, readability, licensing]
     solution:
       module: Typography System
@@ -79,5 +86,5 @@ decisions:
     evidence:
       - brand_id: First_Bank_Brand_Guidelines_2021
         chapter: ch-07
-        excerpt: "Print 使用 Avenir Black/Light、Web 使用 Montserrat Extra Bold/Bold/Semibold/Regular，並依 headline、subhead、body、CTA、button 角色分工；字體選擇依媒介與內容角色決定。"
+        excerpt: 'Print 使用 Avenir Black/Light、Web 使用 Montserrat Extra Bold/Bold/Semibold/Regular，並依 headline、subhead、body、CTA、button 角色分工；字體選擇依媒介與內容角色決定。'
     status: extracted

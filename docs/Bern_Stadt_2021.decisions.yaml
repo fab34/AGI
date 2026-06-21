@@ -20,19 +20,20 @@ decisions:
       industries: [public_sector]
       brand_types: [institutional_public_trust]
       conditions: [multi_media]
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
     evidence:
       - brand_id: Bern_Stadt_2021
         chapter: ch-01
-        excerpt: "以市徽尺寸作為比例單位：Wappen 寬 7mm 時 Stadtmarke 全長 25mm，市徽周圍至少保留一個 Wappen 寬度，讓不同媒介版面可一致推導。"
+        excerpt: '以市徽尺寸作為比例單位：Wappen 寬 7mm 時 Stadtmarke 全長 25mm，市徽周圍至少保留一個 Wappen 寬度，讓不同媒介版面可一致推導。'
     status: extracted
 
   - id: dp-media-split-typography
     title: 依媒介分流字體系統（print / digital / body）
     problem:
-      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權規定。
       signals: [print_and_digital, readability, licensing]
     solution:
       module: Typography System
@@ -51,7 +52,7 @@ decisions:
     evidence:
       - brand_id: Bern_Stadt_2021
         chapter: ch-01-02
-        excerpt: "Print 使用 Univers；電子模板與 PowerPoint 使用 Arial；商務信件使用 Arial 10，降低使用者與輔助工具負擔。"
+        excerpt: 'Print 使用 Univers；電子模板與 PowerPoint 使用 Arial；商務信件使用 Arial 10，降低使用者與輔助工具負擔。'
     status: extracted
 
   - id: dp-restrained-palette-for-trust
@@ -79,14 +80,20 @@ decisions:
     evidence:
       - brand_id: Bern_Stadt_2021
         chapter: ch-01-02
-        excerpt: "以紅、黑、灰、白法定 heraldic 色為基礎，並以 CMYK/RGB/Web/Pantone/RAL/NCS/Scotchcal/Vink-Acril 跨材質定義；黃色不屬 Bern heraldic colors。"
+        excerpt: '以紅、黑、灰、白法定 heraldic 色為基礎，並以 CMYK/RGB/Web/Pantone/RAL/NCS/Scotchcal/Vink-Acril 跨材質定義；黃色不屬 Bern heraldic colors。'
     status: extracted
 
   - id: dp-modular-manual-for-public-units
     title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
     problem:
       statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
-      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+      signals:
+        [
+          multi_unit_consistency,
+          multi_entity,
+          sub_unit_identity,
+          brand_architecture_complexity,
+        ]
     solution:
       module: Brand Architecture
       move: 用 endorsed brand 模式讓部門有服務辨識，但 sender（市府）作為責任來源不可消失
@@ -108,5 +115,5 @@ decisions:
     evidence:
       - brand_id: Bern_Stadt_2021
         chapter: ch-05
-        excerpt: "Umsetzungen Dachmarke：Dienststelle 在城市 umbrella brand 下用部門色、圖像、字體玩法建立辨識，但 sender 保持市府；產品與服務改變，sender 不變。"
+        excerpt: 'Umsetzungen Dachmarke：Dienststelle 在城市 umbrella brand 下用部門色、圖像、字體玩法建立辨識，但 sender 保持市府；產品與服務改變，sender 不變。'
     status: extracted

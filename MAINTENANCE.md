@@ -111,7 +111,7 @@ python scripts/generate_corpus_report.py # 更新語料報告
 | **L3** | Decision Patterns 決策層 | `docs/*.decisions.yaml` → `research/decision_patterns.yaml` | 決策卡（含證據、信心）                  |
 | **L4** | Context 情境知識層       | `research/contexts/{industries,brand_types}.yaml`           | 產業／品牌類型 → 模組／決策卡           |
 | **L5** | Blueprint 原型層         | `research/archetypes.yaml`                                  | 哪些組合構成一致的 guideline            |
-| **L6** | Reasoning 推理層         | `design-guideline-coach`                                    | 客戶資料 → 推薦的決策鏈                 |
+| **L6** | Reasoning 推理層         | `agi`                                                       | 客戶資料 → 推薦的決策鏈                 |
 
 **固定知識 vs 情境知識**：固定模組（Typography、Color、Logo、Governance、Accessibility）幾乎都要有，但其「方向與規格傾向」由 L2 的 `driven_by` 從策略決策推導；情境模組（新能源 → Story Framework；金融 → Trust／Governance；奢侈 → Craftsmanship／Heritage）由 L4 與 L3 命中的決策卡帶入。
 
@@ -142,7 +142,7 @@ sources/*.pdf ─ Researcher ─► index.yaml + note.md
 | ID                         | 名稱               | 典型情境                              |
 | -------------------------- | ------------------ | ------------------------------------- |
 | `brand_experience_guide`   | 標準品牌體驗指南   | 多數單一品牌企業手冊（預設）          |
-| `full_brand_system`        | 完整消費者品牌系統 | 策略前置、章節完整（如 LucidMotors）       |
+| `full_brand_system`        | 完整消費者品牌系統 | 策略前置、章節完整（如 LucidMotors）  |
 | `corporate_toolkit`        | 企業品牌工具包     | 扁平、執行導向（如 AMD）              |
 | `multi_brand_architecture` | 多品牌架構         | 母子公司、聯名（如 World Bank Group） |
 | `product_design_system`    | 產品設計系統       | UI、token、元件                       |
@@ -167,7 +167,7 @@ AGI/
 │   └── corpus_report.md / knowledge_graph_report.md
 ├── scripts/                   # profile、語料統計、知識圖譜編譯
 └── .cursor/skills/
-    ├── design-guideline-coach/        # 新客戶規劃（Design Strategy Agent）
+    ├── agi/        # 新客戶規劃（AGI）
     ├── design-guideline-researcher/   # 既有 PDF 分析
     └── design-strategy-extractor/     # note → 決策卡
 ```
@@ -235,7 +235,7 @@ python scripts/apply_taiwan_zh_terms.py      # 依台灣繁體用語對照表修
 
 | 用途                                 | Skill                                                 |
 | ------------------------------------ | ----------------------------------------------------- |
-| 新客戶規劃 guideline（知識圖譜推理） | `.cursor/skills/design-guideline-coach/SKILL.md`      |
+| 新客戶規劃 guideline（知識圖譜推理） | `.cursor/skills/agi/SKILL.md`                         |
 | 分析既有 PDF                         | `.cursor/skills/design-guideline-researcher/SKILL.md` |
 | 把 note 升級成決策卡                 | `.cursor/skills/design-strategy-extractor/SKILL.md`   |
 

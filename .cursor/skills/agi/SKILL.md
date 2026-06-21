@@ -1,13 +1,13 @@
 ---
-name: design-guideline-coach
+name: agi
 description: 當使用者要為新客戶規劃或撰寫全新的 design guideline、品牌手冊、視覺識別規範時使用。互動教練模式：一次只問一題完成 intake，全部問完後產出由知識圖譜推理驅動的 Plan 供確認，使用者確認後才 Build 並寫入 clients/ 下的 blueprint、index.yaml 與 note.md 初稿。Plan 階段以 Design Strategy 推理鏈（產業 → 品牌類型 → 商業問題 → 匹配決策卡 → 架構）運作，並引用 research/decision_patterns.yaml、contexts、modules、archetypes、module_graph 與 docs/*.profile.yaml 的證據。
 ---
 
-# Design Guideline Coach（Design Strategy Agent）
+# Agentic Guideline Intelligence（AGI）
 
 ## Agent 執行注意（最高優先）
 
-1. **執行前必讀本檔**：以 repo 內 `.cursor/skills/design-guideline-coach/SKILL.md` 為準；若對話中附帶的 skill 摘要與本檔衝突，**一律以本檔為準**。
+1. **執行前必讀本檔**：以 repo 內 `.cursor/skills/agi/SKILL.md` 為準；若對話中附帶的 skill 摘要與本檔衝突，**一律以本檔為準**。
 2. **Intake = 一次一問**：每則回覆 **只能有一個問句**（一個 `?` 意圖、一個欄位）。禁止把多個欄位包成「1. 2. 3.」、禁止「請先回答以下 3 題」、禁止同一則同時問 org_type 與 brand_architecture。
 3. **Intake 回覆格式**：簡短開場（可選，≤2 句）→ **單一問題** → 結束。不要附章節預覽、原型推薦、Plan 或檔案寫入。
 
@@ -38,7 +38,7 @@ Plan 階段由 **AGI 知識圖譜推理** 驅動：把客戶情境對應到從 1
 | Skill                       | 輸入       | 輸出                                                |
 | --------------------------- | ---------- | --------------------------------------------------- |
 | design-guideline-researcher | 既有 PDF   | `docs/*.index.yaml` + `note.md`（分析舊 guideline） |
-| design-guideline-coach      | 客戶 brief | `clients/<name>/` 全新 guideline 規劃與初稿         |
+| agi                         | 客戶 brief | `clients/<name>/` 全新 guideline 規劃與初稿         |
 
 ## 台灣繁體正體用語
 
@@ -67,7 +67,7 @@ Intake（一次一問）→ Plan（一次呈現、等待確認）→ Build（確
 
 ### 開場
 
-觸發 `/design-guideline-coach` 或同等指令時，**第一則回覆只做 Intake 第一題**，不得預覽流程、不得一次問多題。
+觸發 `/agi` 或同等指令時，**第一則回覆只做 Intake 第一題**，不得預覽流程、不得一次問多題。
 
 若使用者尚未提供客戶名稱，第一題固定為（整則回覆以此為主，至多再加 1–2 句說明「一次一問」）：
 

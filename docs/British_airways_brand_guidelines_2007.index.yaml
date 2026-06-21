@@ -29,7 +29,7 @@ chapters:
     level: 1
     order: 2
     pages: '2.0'
-    summary: '定義 Speedmarque、logotype、palette、type、photography、graphic system 與基本組合規則。'
+    summary: '定義 Speedmarque、logotype、palette、type、photography、graphic system 與基本組成規則。'
     children: []
   - id: 'ch-03'
     title: 'Application'

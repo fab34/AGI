@@ -224,7 +224,7 @@
 
 ## Putting It All Together
 
-1. **Chapter Purpose**：此章把前面各模組轉成實際版面組合規則，解決「知道元素但不知道如何組合」的問題。
+1. **Chapter Purpose**：此章把前面各模組轉成實際版面組成規則，解決「知道元素但不知道如何組合」的問題。
 2. **Definition**：它定義 grid、Circular、shape、mesh、color set、photography、gradients、mesh assets、examples 與 filenames 的整合方式。
 3. **Relationship**：它依賴 Our New Visual Identity 的所有工具，並把它們落到 brochure、ads、home screens、banners、signage、digital UX 等應用。
 4. **Design Execution**：作者用步驟、尺寸、比例、建構點、禁止用法與最佳範例，讓系統既可操作又可審核。

@@ -8,7 +8,8 @@ decisions:
     title: 先定義企業策略與語氣，再建立視覺識別工具箱
     problem:
       statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
-      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+      signals:
+        [no_strategic_foundation, enterprise, style_over_system, new_identity]
     solution:
       module: Brand Strategy
       move: 以 mission-to-identity 框架先用創辦使命與技術定位定錨，再導入 identity toolkit 與應用規則
@@ -18,19 +19,22 @@ decisions:
       - 品牌一致性是中長期 equity 的來源；創新品牌也需要紀律化的識別治理
       - 品牌手冊導言應把設計規範與組織使命連結，提升規則遵從動機
     applicable_when:
-      industries: [industrial_materials_science, tech_software, new_energy_mobility]
-      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      industries:
+        [industrial_materials_science, tech_software, new_energy_mobility]
+      brand_types:
+        [category_creator, heritage_legacy, challenger, mission_driven]
       conditions: [new_identity, strategy_refresh]
       archetypes: [full_brand_system, brand_experience_guide]
     dependencies:
       requires: []
-      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+      enables:
+        [Visual Identity, Color System, Typography System, Voice and Tone]
     anti_patterns:
       - guideline 從空白直接列章節、先寫 Logo 規格
     evidence:
       - brand_id: Tesla_Guidelines_2010
         chapter: ch-01
-        excerpt: "mission-to-identity framework：company story、technology purpose、global consistency、application rules；以創辦使命先行，再導入視覺工具箱。"
+        excerpt: 'mission-to-identity framework：company story、technology purpose、global consistency、application rules；以創辦使命先行，再導入視覺工具箱。'
     status: extracted
 
   - id: dp-logo-vs-lockup-distinction
@@ -50,14 +54,15 @@ decisions:
       industries: [industrial_materials_science, finance, tech_software]
       brand_types: [heritage_legacy, platform_ecosystem]
       conditions: [trademark]
-      archetypes: [brand_experience_guide, corporate_toolkit, multi_brand_architecture]
+      archetypes:
+        [brand_experience_guide, corporate_toolkit, multi_brand_architecture]
     dependencies:
       requires: [Visual Identity]
       enables: [Legal and Trademark, Governance]
     evidence:
       - brand_id: Tesla_Guidelines_2010
         chapter: ch-02
-        excerpt: "permission-tiered identity system：wordmark 可廣泛使用，Tesla Flag 與 Tesla T 不得提供第三方且需 Corporate Marketing 與 Chief Designer 核准。"
+        excerpt: 'permission-tiered identity system：wordmark 可廣泛使用，Tesla Flag 與 Tesla T 不得提供第三方且需 Corporate Marketing 與 Chief Designer 核准。'
     status: extracted
 
   - id: dp-clearspace-from-logo-geometry
@@ -76,20 +81,21 @@ decisions:
       industries: []
       brand_types: []
       conditions: [multi_media]
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
       enables: []
     evidence:
       - brand_id: Tesla_Guidelines_2010
         chapter: ch-02-01
-        excerpt: "wordmark 四周 clearspace 至少等於 wordmark 高度；不得 inline 作為 headline/copy 的一部分。"
+        excerpt: 'wordmark 四周 clearspace 至少等於 wordmark 高度；不得 inline 作為 headline/copy 的一部分。'
     status: extracted
 
   - id: dp-media-split-typography
     title: 依媒介分流字體系統（print / digital / body）
     problem:
-      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權規定。
       signals: [print_and_digital, readability, licensing]
     solution:
       module: Typography System
@@ -111,14 +117,15 @@ decisions:
     evidence:
       - brand_id: Tesla_Guidelines_2010
         chapter: ch-03
-        excerpt: "Helvetica 為 primary/copy font、Gotham 為 headline font、Arial 為 electronic font；電子應用使用 Arial 取代 Helvetica。"
+        excerpt: 'Helvetica 為 primary/copy font、Gotham 為 headline font、Arial 為 electronic font；電子應用使用 Arial 取代 Helvetica。'
     status: extracted
 
   - id: dp-approval-gate-for-exceptions
     title: 例外不是漏洞，用審核閘門把差異收進可治理的模組
     problem:
       statement: 規則無法窮舉所有情境，現實組織總會有例外；若放任各單位自行決定，例外會逐步擴張成破壞系統的破口。
-      signals: [exception_handling, multi_unit_consistency, governance, scaling_risk]
+      signals:
+        [exception_handling, multi_unit_consistency, governance, scaling_risk]
     solution:
       module: Governance
       move: 為 lifestyle/merchandise 例外設計 hard rules（區分用途、不得嚴重扭曲、必須出現 identity、投產前核准），把彈性收進審核閘門
@@ -128,7 +135,8 @@ decisions:
       - 品牌一致性不是取消差異，而是把差異收進可治理的模組
     applicable_when:
       industries: [public_sector, finance]
-      brand_types: [institutional_public_trust, platform_ecosystem, heritage_legacy]
+      brand_types:
+        [institutional_public_trust, platform_ecosystem, heritage_legacy]
       conditions: [multi_unit_consistency, exception_handling]
       archetypes: [multi_brand_architecture, corporate_toolkit]
     dependencies:
@@ -139,5 +147,5 @@ decisions:
     evidence:
       - brand_id: Tesla_Guidelines_2010
         chapter: ch-07
-        excerpt: "區分公司/產品代表性物件與 fashion items；fashion items 可拆解 logo 但不得嚴重扭曲，物件某處必須出現 Tesla identity，投產前需 Corporate Marketing 與 Chief Designer 核准。"
+        excerpt: '區分公司/產品代表性物件與 fashion items；fashion items 可拆解 logo 但不得嚴重扭曲，物件某處必須出現 Tesla identity，投產前需 Corporate Marketing 與 Chief Designer 核准。'
     status: extracted

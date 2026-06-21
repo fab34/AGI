@@ -1,6 +1,6 @@
 # AGI — Agentic Guideline Intelligence
 
-本專案從上百份國際品牌 Design Guideline 蒸餾成可檢索、可統計、**可推理** 的 Design Guideline 知識圖譜，主要使用 Agent 的 **design-guideline-coach** Skill：直接協助 **新客戶** 規劃並產生接近完整版的 Design Guideline 具體建議初稿。
+本專案從上百份國際品牌 Design Guideline 蒸餾成可檢索、可統計、**可推理** 的 Design Guideline 知識圖譜，主要使用 **agi** Skill：直接協助 **新客戶** 規劃並產生接近完整版的 Design Guideline 具體建議初稿。
 
 本專案不是傳統 Web 應用，而是 **內容庫 + Cursor Skills + 研究層 YAML**；能力來自 Agent 讀取使用者 brief 並依 Skill 規範產出檔案。
 
@@ -12,8 +12,8 @@
 
 ## 為新客戶規劃 Design Guideline
 
-**Skill：** `design-guideline-coach`  
-路徑：`.cursor/skills/design-guideline-coach/SKILL.md`
+**Skill：** `agi`  
+路徑：`.cursor/skills/agi/SKILL.md`
 
 > 建議：CLAUDE CODE 使用者可以請 CLAUDE 轉為 CLAUDE SKILL 格式。
 
@@ -30,7 +30,7 @@
 或帶更多背景：
 
 ```text
-請用 Design Guideline coach，幫一家 B2B 科技公司規劃全新 Brand Guideline。
+請用 Agentic Guideline Intelligence，幫一家 B2B 科技公司規劃全新 Brand Guideline。
 單一品牌、主要數位與簡報、有品牌負責人、要做完整手冊。
 ```
 
@@ -40,7 +40,7 @@
 | ------------- | ---------------------------- | ----------------------------------------------------------------- |
 | **1. Intake** | 逐題回答                     | **一次只問一題**；問完 intake 與延伸問題；**不寫** guideline 檔案 |
 | **2. Plan**   | 閱讀並回覆「確認」或指出修改 | **一次** 呈現完整規劃 Plan（原型、模組、章節、先例、TBD）         |
-| **3. Build**  | 確認後產出                   | 寫入 `clients/<slug>/` 全套檔案                                   |
+| **3. Build**  | 確認後產出                   | 寫入 `clients/<客戶名稱>/` 全套檔案                               |
 
 ### 輸出位置
 

@@ -21,7 +21,8 @@ decisions:
       industries: []
       brand_types: []
       conditions: [multi_media]
-      archetypes: [brand_experience_guide, full_brand_system, logo_asset_guidelines]
+      archetypes:
+        [brand_experience_guide, full_brand_system, logo_asset_guidelines]
     dependencies:
       requires: [Visual Identity]
       enables: []
@@ -30,7 +31,7 @@ decisions:
     evidence:
       - brand_id: MSCI_Brand_guidelines_2021
         chapter: ch-02-01
-        excerpt: "logo 周圍需保留 inner square 尺寸 clear space；用 mark inner square 作 clear space，不得縮放內部元素或自行創建版本。"
+        excerpt: 'logo 周圍需保留 inner square 尺寸 clear space；用 mark inner square 作 clear space，不得縮放內部元素或自行創建版本。'
     status: extracted
 
   - id: dp-cobranding-grid-governance
@@ -57,13 +58,13 @@ decisions:
     evidence:
       - brand_id: MSCI_Brand_guidelines_2021
         chapter: ch-02-02
-        excerpt: "MSCI 與 partner logo 需視覺等重、以 vertical rule 分隔，兩者間距不得小於指定 exclusion zone，所有第三方 co-branding 須 MSCI Marketing 核准。"
+        excerpt: 'MSCI 與 partner logo 需視覺等重、以 vertical rule 分隔，兩者間距不得小於指定 exclusion zone，所有第三方 co-branding 須 MSCI Marketing 核准。'
     status: extracted
 
   - id: dp-media-split-typography
     title: 依媒介分流字體系統（print / digital / body）
     problem:
-      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權合規。
+      statement: 同一字體在印刷與數位、標題與內文的需求不同，混用會犧牲可讀性或授權規定。
       signals: [print_and_digital, readability, licensing]
     solution:
       module: Typography System
@@ -86,7 +87,7 @@ decisions:
     evidence:
       - brand_id: MSCI_Brand_guidelines_2021
         chapter: ch-03
-        excerpt: "Roboto 用於 digital/print artwork；Merriweather 用於專業設計且大量文字；Arial 用於 email；另指定日韓中阿系統字體做 language fallback。"
+        excerpt: 'Roboto 用於 digital/print artwork；Merriweather 用於專業設計且大量文字；Arial 用於 email；另指定日韓中阿系統字體做 language fallback。'
     status: extracted
 
   - id: dp-accessible-contrast-pairs
@@ -116,8 +117,8 @@ decisions:
     evidence:
       - brand_id: MSCI_Brand_guidelines_2021
         chapter: ch-04
-        excerpt: "非大字文字需符合暗底/亮底建議色組，logo 背景應依表格選擇 full-color 或 white version；色票系統兼具 design token 與 accessibility matrix。"
+        excerpt: '非大字文字需符合暗底/亮底建議色組，logo 背景應依表格選擇 full-color 或 white version；色票系統兼具 design token 與 accessibility matrix。'
       - brand_id: MSCI_Brand_guidelines_2021
         chapter: ch-07
-        excerpt: "decorative image alt 為空、所有 video 有 captions 與 transcript；品牌信任感來自使用者能找到、讀懂、快速載入並無障礙使用內容。"
+        excerpt: 'decorative image alt 為空、所有 video 有 captions 與 transcript；品牌信任感來自使用者能找到、讀懂、快速載入並無障礙使用內容。'
     status: extracted

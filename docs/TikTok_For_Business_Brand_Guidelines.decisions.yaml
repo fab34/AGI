@@ -8,7 +8,8 @@ decisions:
     title: 先定義企業策略與語氣，再建立視覺識別工具箱
     problem:
       statement: 大型技術企業若直接寫視覺規則，視覺系統會變成單純新風格，而非品牌平台的執行工具。
-      signals: [no_strategic_foundation, enterprise, style_over_system, new_identity]
+      signals:
+        [no_strategic_foundation, enterprise, style_over_system, new_identity]
     solution:
       module: Brand Strategy
       move: 先把平台使命作為上游來源（platform mission → business mission → creative behavior），再進入視覺與廣告執行
@@ -19,25 +20,28 @@ decisions:
       - 先建立判斷標準，後續視覺與語氣才有可回溯的語義來源
     applicable_when:
       industries: [industrial_materials_science, tech_software]
-      brand_types: [category_creator, heritage_legacy, challenger, mission_driven]
+      brand_types:
+        [category_creator, heritage_legacy, challenger, mission_driven]
       conditions: [new_identity, strategy_refresh]
       archetypes: [full_brand_system, brand_experience_guide]
     dependencies:
       requires: []
-      enables: [Visual Identity, Color System, Typography System, Voice and Tone]
+      enables:
+        [Visual Identity, Color System, Typography System, Voice and Tone]
     anti_patterns:
       - guideline 從空白直接列章節、先寫 Logo 規格
     evidence:
       - brand_id: TikTok_For_Business_Brand_Guidelines
         chapter: ch-01
-        excerpt: "把 TikTok 平台使命作為商業品牌的上游來源，避免 TikTok For Business 變成一般廣告科技品牌；platform mission → business mission → creative behavior → brand execution。"
+        excerpt: '把 TikTok 平台使命作為商業品牌的上游來源，避免 TikTok For Business 變成一般廣告科技品牌；platform mission → business mission → creative behavior → brand execution。'
     status: extracted
 
   - id: dp-persona-driven-voice
     title: 從產品行為與用戶語言抽取語氣，而非另造企業腔
     problem:
       statement: 平台／社群品牌若用一般企業口吻發聲，會顯得疏離、像公告，無法與用戶建立歸屬感。
-      signals: [personality_expression, community, relatability, differentiation]
+      signals:
+        [personality_expression, community, relatability, differentiation]
     solution:
       module: Voice and Tone
       move: 從平台原生行為抽取語氣（write the way people talk），用 playful energy + business relevance + direct outcome 的閾值平衡有趣與可信
@@ -59,14 +63,21 @@ decisions:
     evidence:
       - brand_id: TikTok_For_Business_Brand_Guidelines
         chapter: ch-02-01
-        excerpt: "smart and direct、hint of playfulness、write the way people talk；對商業受眾說話不等於變嚴肅，playfulness 是策略工具而非任意搞笑。"
+        excerpt: 'smart and direct、hint of playfulness、write the way people talk；對商業受眾說話不等於變嚴肅，playfulness 是策略工具而非任意搞笑。'
     status: extracted
 
   - id: dp-system-toolkit-over-template
     title: 企業視覺系統給「可組合工具箱」而非僵硬模板
     problem:
       statement: 要求每個版面長得完全相同會扼殺多元內容；但完全自由又會失去一致性。
-      signals: [many_teams, many_agencies, diverse_content, system_consistency, mass_touchpoints]
+      signals:
+        [
+          many_teams,
+          many_agencies,
+          diverse_content,
+          system_consistency,
+          mass_touchpoints,
+        ]
     solution:
       module: Visual Language
       move: 從核心 logo primitives 派生圖形家族（circle → bubble/pattern/emphasis），並像 UI component 一樣定義 props 與可近用條件
@@ -76,7 +87,12 @@ decisions:
       - 設計系統最好從核心 logo primitives 派生，而不是另加裝飾素材
       - 用受控的技法集允許創意變化又維持辨識
     applicable_when:
-      industries: [industrial_materials_science, tech_software, consumer_retail_hospitality]
+      industries:
+        [
+          industrial_materials_science,
+          tech_software,
+          consumer_retail_hospitality,
+        ]
       brand_types: [mass_consumer, category_creator]
       conditions: []
       archetypes: [full_brand_system, corporate_toolkit, brand_experience_guide]
@@ -84,14 +100,14 @@ decisions:
       requires: [Visual Identity]
       enables: [Layout System, Examples]
     anti_patterns:
-      - 新增圖形若無法回溯到 logo 圓形或平台行為，視為不符合規定
+      - 新增圖形若無法回溯到 logo 圓形或平台行為，視為違反規定
     evidence:
       - brand_id: TikTok_For_Business_Brand_Guidelines
         chapter: ch-03-04
-        excerpt: "工具箱不是自由裝飾庫，每個元素都有來源、用途、尺寸與可近用條件；品牌圖形元件可像 UI component 一樣定義 props（fill/stroke、color、roundness、size、placement）。"
+        excerpt: '工具箱不是自由裝飾庫，每個元素都有來源、用途、尺寸與可近用條件；品牌圖形元件可像 UI component 一樣定義 props（fill/stroke、color、roundness、size、placement）。'
       - brand_id: TikTok_For_Business_Brand_Guidelines
         chapter: ch-03
-        excerpt: "設計系統最好從核心 logo primitives 派生，而不是另加裝飾素材；logo-derived visual language：circle → bubble / pattern / emphasis / rounded phone shape。"
+        excerpt: '設計系統最好從核心 logo primitives 派生，而不是另加裝飾素材；logo-derived visual language：circle → bubble / pattern / emphasis / rounded phone shape。'
     status: extracted
 
   - id: dp-bold-contrast-for-challenger
@@ -121,5 +137,5 @@ decisions:
     evidence:
       - brand_id: TikTok_For_Business_Brand_Guidelines
         chapter: ch-03-03
-        excerpt: "背景每個 composition 限一個 brand color；highlight text 不得超過一個 emphasis color；不得用 Splash 強調白底文字、不得使用 gradients 或新顏色。"
+        excerpt: '背景每個 composition 限一個 brand color；highlight text 不得超過一個 emphasis color；不得用 Splash 強調白底文字、不得使用 gradients 或新顏色。'
     status: extracted

@@ -8,7 +8,13 @@ decisions:
     title: 先把使命變成共用語言系統，再進入視覺規範
     problem:
       statement: 公益／使命型品牌若一開始就談視覺規範，色彩、攝影與字體會失去策略根基，淪為各自詮釋的風格選擇。
-      signals: [mission_communication, no_strategic_foundation, participation, new_identity]
+      signals:
+        [
+          mission_communication,
+          no_strategic_foundation,
+          participation,
+          new_identity,
+        ]
     solution:
       module: Brand Strategy
       move: 先用 voice attributes → mission → tagline → short/long description 把使命轉成可被全員共用的語言系統，再讓視覺承接其意義
@@ -29,10 +35,10 @@ decisions:
     evidence:
       - brand_id: IBM_Be_Equal_2020
         chapter: ch-01
-        excerpt: "先建立 Be Equal 不是活動口號，而是 IBM 多元共融策略的平台化介面；若缺少此章，後續視覺規範會失去道德與組織行動的依據；倡議型品牌可先規範信念、行為與參與資格，再規範視覺。"
+        excerpt: '先建立 Be Equal 不是活動口號，而是 IBM 多元共融策略的平台化介面；若缺少此章，後續視覺規範會失去道德與組織行動的依據；倡議型品牌可先規範信念、行為與參與資格，再規範視覺。'
       - brand_id: IBM_Be_Equal_2020
         chapter: ch-01-01
-        excerpt: "用字典式拆解 be 與 equal，把名稱本身變成 expand/enable/ensure 的行動承諾；品牌命名應能承載行動動詞，而不只描述價值。"
+        excerpt: '用字典式拆解 be 與 equal，把名稱本身變成 expand/enable/ensure 的行動承諾；品牌命名應能承載行動動詞，而不只描述價值。'
     status: extracted
 
   - id: dp-color-set-over-single-pickers
@@ -48,7 +54,8 @@ decisions:
       - 多彩系統需要約束；色彩組合應可預先測試並提供 source files
       - 交織性可被轉譯為「多色但受限」的色彩演算法
     applicable_when:
-      industries: [industrial_materials_science, media_entertainment, nonprofit_social]
+      industries:
+        [industrial_materials_science, media_entertainment, nonprofit_social]
       conditions: [rich_palette]
       archetypes: [full_brand_system, brand_experience_guide]
     dependencies:
@@ -60,14 +67,20 @@ decisions:
     evidence:
       - brand_id: IBM_Be_Equal_2020
         chapter: ch-02-02
-        excerpt: "豐富可以被規範，多彩不等於無限制：不得兩色來自同色系、不得兩色同色值、logo/logotype 僅能放在 60 或 40 色值上，把 intersectionality 轉譯成多色但受限的色彩演算法。"
+        excerpt: '豐富可以被規範，多彩不等於無限制：不得兩色來自同色系、不得兩色同色值、logo/logotype 僅能放在 60 或 40 色值上，把 intersectionality 轉譯成多色但受限的色彩演算法。'
     status: extracted
 
   - id: dp-modular-manual-for-public-units
     title: 用「可辨識但不獨立」的層級框架治理多機構／多單位品牌
     problem:
       statement: 大型多機構、多單位組織，各單位都想要自己的識別，若無分層治理，品牌會裂解成互相競爭、削弱母品牌的子品牌。
-      signals: [multi_unit_consistency, multi_entity, sub_unit_identity, brand_architecture_complexity]
+      signals:
+        [
+          multi_unit_consistency,
+          multi_entity,
+          sub_unit_identity,
+          brand_architecture_complexity,
+        ]
     solution:
       module: Brand Architecture
       move: 先建立「誰在說話」的判斷層，再以 umbrella → member → VPU/GP → lockup → special case 的層級把組織結構視覺化
@@ -78,7 +91,8 @@ decisions:
       - unity, not uniformity；多元需要透過可治理的變體表達
     applicable_when:
       industries: [public_sector, education, nonprofit_social]
-      brand_types: [institutional_public_trust, platform_ecosystem, mission_driven]
+      brand_types:
+        [institutional_public_trust, platform_ecosystem, mission_driven]
       conditions: [multi_unit_consistency, multi_entity]
       archetypes: [multi_brand_architecture, brand_experience_guide]
     dependencies:
@@ -90,10 +104,10 @@ decisions:
     evidence:
       - brand_id: IBM_Be_Equal_2020
         chapter: ch-02-01
-        excerpt: "Be Equal logo、logotype 與 Community IDs 三層識別共用 IBM Eye-Bee-M 母系統，社群可有專屬變體但需明確界定組合規則；用既有設計語言生成子品牌，避免另起爐灶。"
+        excerpt: 'Be Equal logo、logotype 與 Community IDs 三層識別共用 IBM Eye-Bee-M 母系統，社群可有專屬變體但需明確界定組成規則；用既有設計語言生成子品牌，避免另起爐灶。'
       - brand_id: IBM_Be_Equal_2020
         chapter: ch-01-02
-        excerpt: "先定義 Women、LGBT+、DiversABLE、Veterans 等社群模型，再給每個社群專屬視覺變體；社群資產不得以未列入的自創標語取代 approved system。"
+        excerpt: '先定義 Women、LGBT+、DiversABLE、Veterans 等社群模型，再給每個社群專屬視覺變體；社群資產不得以未列入的自創標語取代 approved system。'
     status: extracted
 
   - id: dp-contact-before-appendix
@@ -110,12 +124,18 @@ decisions:
       - guideline 應包含 owner 與 feedback channel，而非靜態文件
     applicable_when:
       industries: [finance, nonprofit_social]
-      archetypes: [brand_experience_guide, full_brand_system, corporate_toolkit, logo_asset_guidelines]
+      archetypes:
+        [
+          brand_experience_guide,
+          full_brand_system,
+          corporate_toolkit,
+          logo_asset_guidelines,
+        ]
     dependencies:
       requires: [Governance]
       enables: [Operations]
     evidence:
       - brand_id: IBM_Be_Equal_2020
         chapter: ch-05
-        excerpt: "Advice and Resources 強調 guidance is not limited to this document，並列出 brand team、#ibm-brand 與資源網址；新資產或特殊需求應聯絡指定品牌團隊取得協助。"
+        excerpt: 'Advice and Resources 強調 guidance is not limited to this document，並列出 brand team、#ibm-brand 與資源網址；新資產或特殊需求應聯絡指定品牌團隊取得協助。'
     status: extracted

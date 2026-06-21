@@ -39,7 +39,7 @@ chapters:
     level: 1
     order: 2
     pages: '28-35'
-    summary: '建立主色、次色、色階與組合規則。'
+    summary: '建立主色、次色、色階與組成規則。'
     children:
       - id: 'ch-02-01'
         title: 'The palette'

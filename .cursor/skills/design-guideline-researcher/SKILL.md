@@ -14,7 +14,7 @@ description: 當使用者想把 brand、design、identity、product、UI、conte
 撰寫 `note.md`、`index.yaml` summary 與所有中文說明時，須遵循 [`.cursor/rules/taiwan-traditional-chinese.mdc`](../../rules/taiwan-traditional-chinese.mdc)：
 
 - 使用台灣繁體正體常見說法，避免大陸慣用詞
-- 對照表目前重點：**合規** → **規定**（不合規 → 不符合規定）、**智能** → **智慧**
+- 對照表目前重點：**合規** → **規定**（不合規 → 違反規定）、**智能** → **智慧**
 - 對照表未列詞彙仍須以台灣語感判斷
 
 ## 預期專案結構
@@ -188,8 +188,8 @@ chapters:
 
 1. **Chapter Purpose**：...
    ...
-10. **Abstraction**：...
-11. **Visual Evidence**：...
+2. **Abstraction**：...
+3. **Visual Evidence**：...
 ```
 
 ## 分析立場
