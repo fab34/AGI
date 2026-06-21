@@ -2,7 +2,7 @@
 # Coach Agent Discovery 階段使用；映射為啟發式建議，非硬性規則
 
 version: 1
-updated: "2026-06-18"
+updated: '2026-06-18'
 
 fields:
   - id: org_type
@@ -11,7 +11,7 @@ fields:
     required: true
     options:
       - id: startup
-        label: 初創 / 新品牌
+        label: 新創 / 新品牌
       - id: enterprise
         label: 成熟企業
       - id: agency_client

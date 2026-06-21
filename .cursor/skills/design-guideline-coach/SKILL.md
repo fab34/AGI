@@ -81,7 +81,7 @@ Intake（一次一問）→ Plan（一次呈現、等待確認）→ Build（確
 | ---- | --------------------- | --------------------------------------------------------------- |
 | 1    | `client_name`         | 客戶／專案名稱                                                  |
 | 2    | `project_goal`        | 這份 guideline 要解決什麼問題？成功標準是什麼？                 |
-| 3    | `org_type`            | 組織類型（初創／成熟企業／代理商客戶／非營利）                  |
+| 3    | `org_type`            | 組織類型（新創／成熟企業／代理商客戶／非營利）                  |
 | 4    | `brand_architecture`  | 品牌架構（單一品牌／母子／多品牌／高頻聯名）                    |
 | 5    | `primary_media`       | 主要媒介（可多選：數位、印刷、產品 UI、實體產品、影片、全通路） |
 | 6    | `audience`            | 主要受眾（B2B、B2C、員工、合作夥伴等）                          |
@@ -296,8 +296,7 @@ matched_patterns:
     why: '新品類市場教育成本高 → 漸進式 Story Framework'
 recommended_archetype: full_brand_system
 archetype_rationale: '繁體中文說明'
-precedent_ids:
-  [LucidMotors, 3M_Visual_Identity_Guidelines_2015]
+precedent_ids: [LucidMotors, 3M_Visual_Identity_Guidelines_2015]
 modules:
   must: [Visual Identity, Color System, Typography System, Governance]
   should: [Brand Strategy, Messaging, Voice and Tone]
