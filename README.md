@@ -10,7 +10,7 @@
 
 ---
 
-## 使用方式：為新客戶規劃 Guideline（Coach）
+## 為新客戶規劃 Design Guideline
 
 **Skill：** `design-guideline-coach`  
 路徑：`.cursor/skills/design-guideline-coach/SKILL.md`
@@ -19,9 +19,9 @@
 
 使用 Agent 模擬世界頂尖高階設計師的決策順序：先理解客戶情境，再推薦 Guideline 原型與章節結構，引用 AGI 中 128 份國際品牌指南的 **結構與邏輯**，最後產出接近可交付的 Design Guideline 初稿。
 
-### 推薦新手 Prompt
+### 開始設計，起手 Prompt
 
-在 Cursor Agent 對話中說：
+在 Agent 對話中說：
 
 ```text
 幫新客戶規劃 Design Guideline
@@ -45,13 +45,13 @@
 ### 輸出位置
 
 ```text
-clients/<client-slug>/
-  plan.md               # Plan（確認前 status: pending_confirmation）
+clients/<客戶名稱資料夾>/
+  plan.md               # Plan
   intake.yaml           # 結構化 brief
   blueprint.yaml        # 原型、模組、章節計畫、先例 ID
   coach_session.md      # 問答與決策紀錄
-  <client-slug>.index.yaml
-  <client-slug>.note.md # guideline 初稿（TBD 標記待填欄位）
+  <客戶名稱資料夾>.index.yaml
+  <客戶名稱資料夾>.note.md # Design Guideline 初稿在此
 ```
 
 ### 繼續未完成專案
@@ -59,7 +59,7 @@ clients/<client-slug>/
 假設你上次做一半，那麼可以用這個指令繼續：
 
 ```text
-繼續 clients/acme-corp 的 guideline，補 Color 和 Typography 章
+繼續 clients/acme-corp 的 Guideline，補 Color 和 Typography 章
 ```
 
 ### 其他 Prompt 示範：
