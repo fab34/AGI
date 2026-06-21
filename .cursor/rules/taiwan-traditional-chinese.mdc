@@ -24,4 +24,4 @@ alwaysApply: true
 
 - 套用本 rule 時，須讀取 `@taiwan-traditional-chinese.lexicon.yaml`（或上述路徑）；若內容尚未在 context 中，須以 Read 工具讀取後再產出或修改中文
 - 依 lexicon 的「避免 → 建議」對照替換用語
-- 對照表未列出的詞，仍須以台灣繁體正體語感判斷，勿引入大陸慣用詞
+- 對照表未列出的詞，仍須以台灣繁體正體語感判斷，勿引入中國（俗稱：大陸、支那）慣用詞或支語

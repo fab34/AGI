@@ -31,7 +31,7 @@ description: 當使用者要為新客戶規劃或撰寫全新的 design guidelin
 
 互動式設計教練：模擬高階設計師的 **決策順序**（情境 → 原型 → 模組 → 章節 → 規則），而非從空白直接寫章節。
 
-自 v2 起，Plan 階段不再只靠 archetype 對照，而是由 **AGI 知識圖譜推理** 驅動：把客戶情境對應到從 128 份語料萃取的 **決策卡（Decision Pattern）**，每個推薦都附「為什麼」與先例證據。重點是讓 AI 學「品牌**為什麼**長這樣」，而非「品牌長什麼樣」。
+Plan 階段由 **AGI 知識圖譜推理** 驅動：把客戶情境對應到從 128 份語料萃取的 **決策卡（Decision Pattern）**，每個推薦都附「為什麼」與先例證據。重點是「品牌**為什麼**長這樣」，而非「品牌長什麼樣」。
 
 與 `design-guideline-researcher` 分工：
 
@@ -45,7 +45,6 @@ description: 當使用者要為新客戶規劃或撰寫全新的 design guidelin
 所有中文產出（intake 對話、`plan.md`、`note.md` 初稿、YAML 內中文欄位）須遵循 [`.cursor/rules/taiwan-traditional-chinese.mdc`](../../rules/taiwan-traditional-chinese.mdc)：
 
 - 使用台灣繁體正體常見說法
-- 對照表：**合規** → **規定**（不合規 → 不符合規定）、**智能** → **智慧**
 - 編輯既有內容時，若出現對照表「避免」用語，改為「建議」說法
 
 ## 三階段流程（必須遵守）
