@@ -2,4 +2,4 @@
 sources/
 
 # Coach 產出的客戶專案（本機，不入庫）
-.agents/skills/agi/assets/clients/
+clients/

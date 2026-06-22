@@ -21,7 +21,7 @@ note.md（散文式 why）  →  decisions.yaml（結構化 problem/solution/rea
 | ----------------------------------------- | ------------------------ | ------------------------------------------------- |
 | design-guideline-researcher               | PDF                      | `references/docs/*.index.yaml` + `note.md`                   |
 | **design-strategy-extractor（本 skill）** | `note.md` + `index.yaml` | `references/docs/*.decisions.yaml` + 回填 `profile.industry` |
-| agi                                       | 客戶 brief + 知識圖譜    | `assets/clients/<slug>/` guideline 初稿                  |
+| agi                                       | 客戶 brief + 知識圖譜    | `clients/<slug>/` guideline 初稿                  |
 
 ## 台灣繁體正體用語
 
