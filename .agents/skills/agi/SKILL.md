@@ -37,7 +37,7 @@ Plan 階段由 **AGI 知識圖譜推理** 驅動：把客戶情境對應到從 1
 
 | 模式                                                                     | 輸入                     | 輸出                                                           |
 | ------------------------------------------------------------------------ | ------------------------ | -------------------------------------------------------------- |
-| **agi**（本檔）                                                          | 客戶 brief               | `clients/<name>/` 全新 guideline 規劃與初稿             |
+| **agi**（本檔）                                                          | 客戶 brief               | `clients/<name>/` 全新 guideline 規劃與初稿                    |
 | [design-guideline-researcher](references/design-guideline-researcher.md) | 既有 PDF                 | `references/docs/*.index.yaml` + `note.md`（分析舊 guideline） |
 | [design-strategy-extractor](references/design-strategy-extractor.md)     | `note.md` + `index.yaml` | `references/docs/*.decisions.yaml`（把分析升級成決策卡）       |
 
@@ -414,6 +414,7 @@ open_tbd: [...]
 - [ ] 章節語氣符合寫作風格（Design Director、非行銷／非小說）
 - [ ] 無未標記的發明色值／尺寸
 - [ ] `coach_session.md` 含問答與確認紀錄
+- [ ] `note.md` 最後再嚴格檢查是否有按照 `.agents\taiwan-traditional-chinese.lexicon.yaml` 改為台灣用語
 
 ## 觸發範例
 
