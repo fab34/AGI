@@ -43,7 +43,7 @@ Plan 階段由 **AGI 知識圖譜推理** 驅動：把客戶情境對應到從 1
 
 ## 台灣繁體正體用語
 
-所有中文產出（intake 對話、`plan.md`、`note.md` 初稿、YAML 內中文欄位）須遵循 [`.cursor/rules/taiwan-traditional-chinese.mdc`](../../../.cursor/rules/taiwan-traditional-chinese.mdc)：
+所有中文產出（intake 對話、`plan.md`、`note.md` 初稿、YAML 內中文欄位）須遵循 [`AGENTS.md`](../../../AGENTS.md) 的「中文用語規範」：
 
 - 使用台灣繁體正體常見說法
 - 編輯既有內容時，若出現對照表「避免」用語，改為「建議」說法

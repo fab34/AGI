@@ -25,7 +25,7 @@ note.md（散文式 why）  →  decisions.yaml（結構化 problem/solution/rea
 
 ## 台灣繁體正體用語
 
-所有中文欄位（problem.statement、reason、excerpt 等）須遵循 [`.cursor/rules/taiwan-traditional-chinese.mdc`](../../../../.cursor/rules/taiwan-traditional-chinese.mdc)。
+所有中文欄位（problem.statement、reason、excerpt 等）須遵循 [`AGENTS.md`](../../../../AGENTS.md) 的「中文用語規範」。
 
 ## 必讀資源
 

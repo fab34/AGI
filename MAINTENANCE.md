@@ -12,7 +12,7 @@
 
 ### 中文用語（台灣繁體正體）
 
-Agent 產出中文須遵循 [`.cursor/rules/taiwan-traditional-chinese.mdc`](.cursor/rules/taiwan-traditional-chinese.mdc)
+Agent 產出中文須遵循 [`AGENTS.md`](AGENTS.md) 的「中文用語規範」
 
 ---
 

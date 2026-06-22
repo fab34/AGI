@@ -11,7 +11,7 @@ description: 當使用者想把 brand、design、identity、product、UI、conte
 
 ## 台灣繁體正體用語
 
-撰寫 `note.md`、`index.yaml` summary 與所有中文說明時，須遵循 [`.cursor/rules/taiwan-traditional-chinese.mdc`](../../../../.cursor/rules/taiwan-traditional-chinese.mdc)：
+撰寫 `note.md`、`index.yaml` summary 與所有中文說明時，須遵循 [`AGENTS.md`](../../../../AGENTS.md) 的「中文用語規範」：
 
 - 使用台灣繁體正體常見說法，避免大陸慣用詞
 - 對照表未列詞彙仍須以台灣語感判斷

@@ -1,6 +1,6 @@
 # AGENTS.md
 
-給所有 AI agent 的跨工具指引。本檔為通用慣例（多數工具會自動讀取）；Cursor 另有 `.cursor/rules/` 會自動套用，內容與本檔一致。
+給所有 AI agent 的跨工具指引（含 Cursor、Claude Code、Codex 等，多數工具會自動讀取本檔）。這是專案 agent 規範的單一事實來源。
 
 ## 專案簡介
 
