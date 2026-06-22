@@ -51,7 +51,10 @@ Plan 階段由 **AGI 知識圖譜推理** 驅動：把客戶情境對應到從 1
 
 ```text
 Intake（一次一問）→ Plan（一次呈現、等待確認）→ Build（確認後才寫檔）
+                                                  └─ 收尾：Sub Agent 分章擴寫（豐富各章節）
 ```
+
+Build 的 **最後一步** 必須以 **Sub Agent 分章撰寫**，依 Plan 規劃的願景與原則把每一章擴寫到位（見「階段 C 收尾：Sub Agent 分章擴寫」）。初稿 `note.md` 只是骨架，**不得**把骨架當成最終交付。
 
 **嚴格規則：**
 
@@ -224,7 +227,7 @@ Plan 不是直接列章節，而是依下列推理鏈，每一步都引用知識
 
 ### 確認後將產出
 
-`clients/<slug>/` 下的 intake.yaml、blueprint.yaml、index.yaml、note.md、coach_session.md
+`clients/<slug>/` 下的 intake.yaml、blueprint.yaml、index.yaml、note.md、coach_session.md；最後再以 **Sub Agent 分章擴寫**（每章 800～1500 字、Design Director 風格）把各章寫豐富並合併回 note.md
 
 ---
 
@@ -243,10 +246,74 @@ Plan 不是直接列章節，而是依下列推理鏈，每一步都引用知識
 2. 寫入 `intake.yaml`（完整 intake 答案）
 3. 寫入 `blueprint.yaml`（與 Plan 一致）
 4. 寫入 `<slug>.index.yaml`（章節樹）
-5. 撰寫 `<slug>.note.md`（guideline 初稿，非 researcher 分析）
+5. 撰寫 `<slug>.note.md` **骨架初稿**（每章先有目的、結構與待擴寫標記，非 researcher 分析）
 6. 寫入 `coach_session.md`（問答紀錄、Plan 確認點、挑戰過的決策）
+7. **收尾（必做）：以 Sub Agent 分章擴寫**，把骨架擴寫成豐富的正式章節（見下節）
 
 Build 內部仍依模組依賴排序撰寫（策略 → 識別 → 應用 → 治理），但 **不再次逐題訪談**。
+
+---
+
+## 階段 C 收尾：Sub Agent 分章擴寫（必做）
+
+初稿章節篇幅通常過短。Build 的最後一步 **必須** 為每個章節開啟 Sub Agent 擴寫，依 Plan 規劃的 **願景與原則** 把內容寫豐富、寫到可長期維護的深度。
+
+### 編排方式
+
+1. **每章一個 Sub Agent**：依 `<slug>.index.yaml` 的章節清單，為每個 **頂層章節** 派一個 Sub Agent（子章節由該章 agent 一併處理）。
+2. **可並行**：彼此無依賴的章節，於 **同一則訊息** 內一次派出多個 `Task`（`subagent_type: generalPurpose`）並行擴寫，以加速。
+3. **避免寫檔衝突**：每個 Sub Agent **只寫自己負責的章節檔** `clients/<slug>/sections/<chapter-id>.md`，**不得**同時編輯 `<slug>.note.md`。
+4. **合併**：所有 Sub Agent 完成後，由主流程把各 `sections/<chapter-id>.md` 依 `index.yaml` 順序合併回 `<slug>.note.md`（保留檔首摘要與分隔線）。
+5. **完成回報**：合併後做一次 [品質檢查清單](#品質檢查清單build-完成後) 與 `ReadLints`／用語檢查，再向使用者回報。
+
+### 每個 Sub Agent 的任務指示（主流程須完整傳入）
+
+Sub Agent 不知道對話脈絡，派工時 **務必完整提供** 以下內容：
+
+- **章節資訊**：`chapter-id`、title、purpose、`index.yaml` 中的子章節結構
+- **願景與原則來源（擴寫依據）**：`blueprint.yaml`（signals、matched_patterns 的 problem→solution→reason、recommended_archetype、module_directions、章節對應的決策卡）；必要時附上品牌平台章節（使命／願景／支柱／人格詞）作為全書一致性錨點
+- **先例參考**：相關 `precedent_id` 對應的 `docs/*.note.md` 章節（借鏡結構與決策邏輯，**不抄** HEX／標語／尺寸）
+- **既有骨架**：該章在初稿 `note.md` 的現有內容（要 **擴寫與深化**，不是推翻重寫；保留已定稿的策略決策）
+- **寫作風格規範**：完整附上下方「[寫作風格（Sub Agent 必守）](#寫作風格sub-agent-必守)」
+- **硬規則**：台灣繁體正體用語；未知色值／尺寸一律標 `TBD`，**禁止發明數字**；Rules 盡量寫成 AI-checkable
+- **輸出位置**：寫入 `clients/<slug>/sections/<chapter-id>.md`，回報完成的章節與字數
+
+### 寫作風格（Sub Agent 必守）
+
+**寫作身份：**
+
+> You are a **Design Director**.
+> Not a copywriter. Not a marketer. Not a technical writer.
+> You are teaching future designers, developers, agencies, and AI agents **how to make design decisions**.
+
+**禁止模仿：** 行銷文案、廣告文案、部落格文章、小說。
+
+**模仿來源（語氣配比）：**
+
+- 30% Apple Human Interface Guidelines
+- 30% Pentagram Case Studies
+- 20% IBM Design Language
+- 20% IDEO Design Principles
+
+**風格特徵：** 清楚、系統化、教學式、原則導向、決策導向，具備設計哲學、具備治理思維、可長期維護。
+
+**每一章的論述結構（務必依序鋪陳）：**
+
+```text
+Why（為什麼）
+  ↓
+Principles（原則）
+  ↓
+Desired Outcome（期望結果）
+  ↓
+Rules（規則）
+  ↓
+Examples（範例）
+```
+
+**篇幅：** 每章 **至少 800～1500 字**（中文以「字」計）。內容不足時，往「為什麼」與「原則」深掘，而非灌水重複。
+
+**一致性：** 所有主張都要能回溯到 blueprint 的願景、品牌支柱或命中的決策卡；不得引入與 Plan 衝突的新策略。
 
 ### `client-slug`
 
@@ -261,7 +328,9 @@ clients/<client-slug>/
   blueprint.yaml
   coach_session.md
   <client-slug>.index.yaml
-  <client-slug>.note.md
+  <client-slug>.note.md # 合併各章後的完整 guideline
+  sections/             # Sub Agent 分章擴寫的暫存稿（合併來源）
+    <chapter-id>.md
 ```
 
 ### `intake.yaml` 格式
@@ -337,7 +406,11 @@ open_tbd: [...]
 - [ ] 章節 purpose 能對應命中的決策卡（dp-）或明確標示為知識庫缺口
 - [ ] 固定模組方向有依 `driven_by` 說明，而非通用樣板
 - [ ] `index.yaml` 章節 id 穩定
-- [ ] `note.md` 為初稿而非 researcher 分析
+- [ ] `note.md` 為客戶導向初稿而非 researcher 分析
+- [ ] **已執行 Sub Agent 分章擴寫**：每個頂層章節都有對應 `sections/<id>.md` 並合併回 `note.md`
+- [ ] 每章達 800～1500 字，並依 Why → Principles → Desired Outcome → Rules → Examples 鋪陳
+- [ ] 擴寫內容可回溯 blueprint 的願景／支柱／命中決策卡，未引入與 Plan 衝突的新策略
+- [ ] 章節語氣符合寫作風格（Design Director、非行銷／非小說）
 - [ ] 無未標記的發明色值／尺寸
 - [ ] `coach_session.md` 含問答與確認紀錄
 
