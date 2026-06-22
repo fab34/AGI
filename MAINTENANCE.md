@@ -12,11 +12,7 @@
 
 ### 中文用語（台灣繁體正體）
 
-Agent 產出中文須遵循 [`.cursor/rules/taiwan-traditional-chinese.mdc`](.cursor/rules/taiwan-traditional-chinese.mdc)（例如：合規→規定、智能→智慧）。批次修正既有檔案：
-
-```bash
-python scripts/apply_taiwan_zh_terms.py
-```
+Agent 產出中文須遵循 [`.cursor/rules/taiwan-traditional-chinese.mdc`](.cursor/rules/taiwan-traditional-chinese.mdc)
 
 ---
 
