@@ -35,11 +35,11 @@ Plan 階段由 **AGI 知識圖譜推理** 驅動：把客戶情境對應到從 1
 
 本 skill 的三種模式（researcher、extractor 已併入本 skill，詳見 `references/`）：
 
-| 模式                                                                  | 輸入                     | 輸出                                                          |
-| --------------------------------------------------------------------- | ------------------------ | ------------------------------------------------------------- |
-| **agi**（本檔）                                                       | 客戶 brief               | `assets/clients/<name>/` 全新 guideline 規劃與初稿            |
+| 模式                                                                     | 輸入                     | 輸出                                                           |
+| ------------------------------------------------------------------------ | ------------------------ | -------------------------------------------------------------- |
+| **agi**（本檔）                                                          | 客戶 brief               | `assets/clients/<name>/` 全新 guideline 規劃與初稿             |
 | [design-guideline-researcher](references/design-guideline-researcher.md) | 既有 PDF                 | `references/docs/*.index.yaml` + `note.md`（分析舊 guideline） |
-| [design-strategy-extractor](references/design-strategy-extractor.md)  | `note.md` + `index.yaml` | `references/docs/*.decisions.yaml`（把分析升級成決策卡）       |
+| [design-strategy-extractor](references/design-strategy-extractor.md)     | `note.md` + `index.yaml` | `references/docs/*.decisions.yaml`（把分析升級成決策卡）       |
 
 ## 台灣繁體正體用語
 
