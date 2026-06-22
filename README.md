@@ -13,7 +13,7 @@
 ## 為新客戶規劃 Brand Guideline
 
 **Skill：** `agi`  
-路徑：`.cursor/skills/agi/SKILL.md`
+路徑：`.agents/skills/agi/SKILL.md`
 
 > 建議：CLAUDE CODE 使用者可以請 CLAUDE 轉為 CLAUDE SKILL 格式。
 
@@ -40,12 +40,12 @@
 | ------------- | ---------------------------- | ----------------------------------------------------------------- |
 | **1. Intake** | 逐題回答                     | **一次只問一題**；問完 intake 與延伸問題；**不寫** guideline 檔案 |
 | **2. Plan**   | 閱讀並回覆「確認」或指出修改 | **一次** 呈現完整規劃 Plan（原型、模組、章節、先例、TBD）         |
-| **3. Build**  | 確認後產出                   | 寫入 `clients/<客戶名稱>/` 全套檔案                               |
+| **3. Build**  | 確認後產出                   | 寫入 `.agents/skills/agi/assets/clients/<客戶名稱>/` 全套檔案     |
 
 ### 輸出位置
 
 ```text
-clients/<客戶名稱資料夾>/
+.agents/skills/agi/assets/clients/<客戶名稱資料夾>/
   plan.md               # Plan
   intake.yaml           # 結構化 brief
   blueprint.yaml        # 原型、模組、章節計畫、先例 ID
@@ -59,7 +59,7 @@ clients/<客戶名稱資料夾>/
 假設你上次做一半，那麼可以用這個指令繼續：
 
 ```text
-繼續 clients/acme-corp 的 Guideline，補 Color 和 Typography 章
+繼續 acme-corp 的 Guideline，補 Color 和 Typography 章
 ```
 
 ### 其他 Prompt 示範：
