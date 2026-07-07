@@ -3,3 +3,7 @@ sources/
 
 # Coach 產出的客戶專案（本機，不入庫）
 clients/
+
+# OS metadata
+.DS_Store
+
